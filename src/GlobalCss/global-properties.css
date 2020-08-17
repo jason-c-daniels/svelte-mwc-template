@@ -12,22 +12,26 @@ classes or elements, place definitions under :root */
 
 :root {
     /* these examples are from material design (https://material.io/design/color/the-color-system.html#color-theme-creation) */
+    --mdc-theme-primary: #01579b;
+    --mdc-theme-on-primary: white;
+    --mdc-theme-secondary: #2e7d32;
+    --mdc-theme-on-secondary: white;
 
     /* application/section colors */
-    --md-primary-color: #6200ee;
-    --md-primary-color-variant: #3700b3;
-    --md-secondary-color: #03dac6;
-    --md-secondary-color-variant: #018786;
-    --md-background-color: #fff;
-    --md-surface-color: #fff;
-    --md-error-color: #b00020;
+    --my-primary-color: #6200ee;
+    --my-primary-color-variant: #3700b3;
+    --my-secondary-color: #03dac6;
+    --my-secondary-color-variant: #018786;
+    --my-background-color: #fff;
+    --my-surface-color: #fff;
+    --my-error-color: #b00020;
 
     /* typography and iconography */
-    --md-on-primary: #fff;
-    --md-on-secondary: #000;
-    --md-on-background: #000;
-    --md-on-surface: #000;
-    --md-on-error: #fff;
+    --my-on-primary: #fff;
+    --my-on-secondary: #000;
+    --my-on-background: #000;
+    --my-on-surface: #000;
+    --my-on-error: #fff;
 
 
     /* these examples are in use in normalize.css and sanitize.css */
