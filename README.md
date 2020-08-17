@@ -1,30 +1,21 @@
-# Svelte PostCSS Template
+# Svelte Material Web Components Template
 
 ## About
-This is an opinionated nearly bare bones Svelte project template that uses PostCSS and related tools. 
-The `index.html` and other portions have been pared down to bare bones.
-This should eliminate much of the desire or need to tinker with the `public` folder.
+This is a small Svelte 3 application with a couple of items hooked up, such as a 
+fixed position top application bar and a crude printable section. 
 
-As well this project template expresses a strong opinion on HOW to use global settings.
-It provides a `GlobalCss` component that pulls in items such as global.css, and normalize.css.
-It also expresses the opinion that any and all modifications to the document `head` section happen within `App.svelte`
-by using the `<svelte:head />` element. It's even used to set the application title.
+This work is based heavily on my own svelte-postcss-template which is itself 
+based heavily on the work done by the `sveltejs` team on github among others.
 
-Also, the project was created with a preference towards using an `index.js` within a named component 
-folder for components. This allows you to keep all files related to the development of a single component in one place.
-As well if there are subcomponents used only in the creation of the main export, they will ideally live in the same 
-folder with the main component.
-
-This work is based heavily on the work done by the `sveltejs` team on github and others.
-Run the template app to see the full list.
 
 ## Using this template
 1. As a github template project  you can just click the "Use This Template" button.
-2. Run `npx degit jason-c-daniels/svelte-postcss-template your-project-name`
+2. Run `npx degit jason-c-daniels/svelte-mwc-template your-project-name`
 3. Download a zip of the master branch from github.
+4. In the project folder run `npm install` to install the dependencies.
 
 ## Where to go from here
 You'll need to modify `package.json` and `main.js` with the actual name of your application. 
-(`main.js` passes it to the App component)  From there remove the default code and begin 
+(`main.js` passes it to the App component)  From there remove or edit code to begin 
 coding your own application.
 
