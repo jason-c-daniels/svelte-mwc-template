@@ -7,13 +7,13 @@ module.exports = {
     plugins: [
         require('postcss-import')(),
         require('autoprefixer'),
-        production &&
+/*        production &&
         purgecss({
-            content: ['./src/**/*.svelte', './src/**/*.html', './public/**/*.html'],
-            css: ['./src/**/*.css'],
+            content: ['./src/!**!/!*.svelte', './src/!**!/!*.html', './public/!**!/!*.html'],
+            css: ['./src/!**!/!*.css'],
             whitelistPatterns: [/svelte-/],
             defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-        }),
+        }),*/
         production &&
         require('cssnano')({
             preset: 'default',

@@ -1,20 +1,38 @@
 
 main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    margin: 0 0;
 }
 
-h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+.drawer-header {
+    margin-left: 16px; margin-bottom: -1em; margin-top:-1em;
 }
 
-@media (min-width: 640px) {
-    main {
-        max-width: none;
+@media print {
+    .noprint {
+        display: none !important;
     }
+    .printme {
+        display: block !important;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        text-align: left;
+        padding: 0;
+        margin: 0.5in;
+        width: 7.5in;
+        height: 10in;
+    }
+}
+
+.printme {
+    display: none;
 }
